@@ -1,5 +1,9 @@
 package com.champlain.oop2assignment2;
 
+/**
+ * Interface for any source of cards in a card game (e.g. decks, stacks, hands ...)
+ * Allows the user to draw from it and check if it is empty.
+ */
 public interface CardSource {
     /**+
      * Returns a card from the source.

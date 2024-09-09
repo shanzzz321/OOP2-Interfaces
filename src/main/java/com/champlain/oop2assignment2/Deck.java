@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class Deck implements CardSource {
-    private final List<Card> aCards = new ArrayList<Card>();
+    private final List<Card> aCards = new ArrayList<>();
 
     public Deck() {
         for (Rank currentRank : Rank.values()) {
@@ -31,10 +31,10 @@ public class Deck implements CardSource {
     }
 
     public String toString() {
-        String result = "";
+        StringBuilder result = new StringBuilder();
         for (Card currentCard : this.aCards) {
-            result += currentCard.toString() + "\n";
+            result.append(currentCard.toString()).append("\n");
         }
-        return result;
+        return result.toString();
     }
 }

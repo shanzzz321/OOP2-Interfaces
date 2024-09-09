@@ -21,12 +21,12 @@ public class DeckController {
 
     @FXML
     protected void onSortButtonClick() {
-        aDeckTextArea.setText("This does not sort anything yet.");
+        this.aDeckTextArea.setText("This does not sort anything yet.");
     }
 
     @FXML
     protected void onShowButtonClick() {
-        aDeckTextArea.setText("This does not step through anything yet.");
+        this.aDeckTextArea.setText("This does not step through anything yet.");
     }
 
     private void displayDeck () {
